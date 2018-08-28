@@ -2,11 +2,11 @@
 - hosts: webservers
   become: yes
   tasks:
-   - name: update packages
-     apt: 
-       update_cache: yes
-   - name: install apache
+  - name: update packages
+    apt: 
+      update_cache: yes
+  - name: install apache
      apt:
-      name: apache2
-      service: present
+       name: apache2
+       service: present
 
